@@ -20,13 +20,9 @@ function App() {
         <h2>You Win!</h2>
         <p>Well done!</p>
       </section>
-<<<<<<< HEAD
       <section className="language-section">
         {languagesList}
       </section>
-      
-=======
->>>>>>> 9497ae1f0148d951ca6622e64c257b96d08564d5
     </main>
   );
 }
