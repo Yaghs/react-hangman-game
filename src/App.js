@@ -1,6 +1,12 @@
 
 import {languages} from "./languages.js"
+import {useState} from "react"
+
 function App() {
+  const [currentWord, setCurrentWord] = useState("Hello")
+
+  const currentLetters = currentWord.split("").map((letter, index) =>(<span key={index}>{letter.toUpperCase()}</span>))
+
 
   const languagesList = languages.map((language, index)=>{
     return(
@@ -22,6 +28,9 @@ function App() {
       </section>
       <section className="language-section">
         {languagesList}
+      </section>
+      <section className="word">
+        {currentLetters}
       </section>
     </main>
   );
