@@ -18,3 +18,19 @@ header {
   text-align: center;
 }
 
+
+section.game-status{
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.game-status > p {
+  margin: 5px;
+}
+
+section.game-status > h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
